@@ -1,0 +1,21 @@
+# Dependencias
+/vendor/
+
+# Variables de entorno (nunca subir credenciales reales)
+.env
+
+# Archivos de Docker generados / volúmenes locales
+docker-compose.override.yml
+
+# Logs
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+
+# Composer (mantener composer.lock SÍ es correcto, no lo ignores)

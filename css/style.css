@@ -1,0 +1,152 @@
+/* ===================================================
+   SISTEMA DE TUTORÍAS UPDS - ESTILOS ELEGANTES
+   =================================================== */
+
+:root {
+    --upds-blue: #0d6efd;
+    --upds-navy: #0f172a;
+    --upds-bg: #f8fafc;
+    --upds-card-border: rgba(226, 232, 240, 0.8);
+}
+
+body {
+    background-color: var(--upds-bg);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #334155;
+}
+
+/* Header de la Aplicación */
+.navbar-custom {
+    background-color: #0f172a !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Tarjeta Contenedora Principal con Sombra Suave */
+.main-card-container {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid var(--upds-card-border);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04), 0 4px 6px -4px rgba(0, 0, 0, 0.01);
+    padding: 1.75rem;
+}
+
+/* Botón Principal Elegante (+ Nuevo Tutor / Nuevo Usuario) */
+.btn-primary-custom {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    color: #ffffff !important;
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1.3rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(13, 110, 253, 0.35);
+}
+
+/* Distintivo de Módulo (Eyebrow) */
+.eyebrow-badge {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #0d6efd;
+    background: rgba(13, 110, 253, 0.08);
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+/* Tabla Moderna */
+.table-modern {
+    border-collapse: separate;
+    border-spacing: 0 6px;
+}
+
+.table-modern thead th {
+    background-color: transparent;
+    color: #64748b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    padding: 12px 18px;
+}
+
+.table-modern tbody tr {
+    background-color: #ffffff;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.table-modern tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+.table-modern tbody td {
+    padding: 16px 18px;
+    vertical-align: middle;
+    border-top: 1px solid #f1f5f9;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.table-modern tbody td:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-left: 1px solid #f1f5f9;
+}
+
+.table-modern tbody td:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-right: 1px solid #f1f5f9;
+}
+
+/* Badges / Etiqueta de Estado */
+.badge-soft-success {
+    background-color: #dcfce7;
+    color: #15803d;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.badge-soft-primary {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+/* Botones de Acción Elegantes (Ver, Editar, Eliminar) */
+.action-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    color: #475569;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.action-btn:hover {
+    background: #e2e8f0;
+    color: #0d6efd;
+    transform: translateY(-1px);
+}
+
+.action-btn.btn-danger-soft:hover {
+    background: #fee2e2;
+    color: #dc2626;
+    border-color: #fca5a5;
+}
